@@ -5,7 +5,7 @@
 
 ## 如何获取cookie
 以chrome浏览器为例，访问 m.weibo.com，同时打开开发者工具（快捷键：F12），选择Network，勾选 Preserce log。登录微博，开发者工具开始抓取网络日志，找到 m.weibo.cn->Headers->Cookie，将其复制到代码中。
-![how to get cookie](get_cookie.png)(https://raw.githubusercontent.com/whuwangyong/crawler/master/weibo/get_cookie.png)
+[![how to get cookie](get_cookie.png)](https://raw.githubusercontent.com/whuwangyong/crawler/master/weibo/get_cookie.png)
 
 ## 如何运行 HOW TO RUN
 python3 weiboSpider.py user_id
