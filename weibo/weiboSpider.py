@@ -1,6 +1,8 @@
 #-*- coding:utf8 -*-
 #!/usr/bin/python3
 
+# 爬取指定id 2016年的全部微博
+
 import requests
 import os
 import sys
@@ -17,6 +19,7 @@ else:
 	user_id = (int)(raw_input('input user_id:'))
 
 # cookie = {"Cookie": "your cookie"}
+# 使用多个账号的cookie，降低403 forbidden的风险
 cookies = [{"Cookie": "_T_WM=564824bb1589a30e3d0c8bcf5fd27cc4; SUB=_2A251u8RkDeRxGeNI4lES9SnMzz2IHXVXR-wsrDV6PUJbkdBeLXbCkW1WKJ4IuwxGNab1HWT7TKk6dJeS_w..; SUHB=00xpAt8JDskW1i; SCF=AhRPKBxB-_WuWB_L5ur2Hkw_shAdVQezioscCczugtxqxD0_JKedWThYeFVXGj9Vln9nl5Di3bVgFmytNakUMNk.; SSOLoginState=1488958516"},
 			{"Cookie": "_T_WM=fa11da29ec28c0458646e8f31e97814c; SUB=_2A251u7DiDeRxGeNI4lES9SjFzDSIHXVXR9CqrDV6PUJbkdBeLUKlkW2N7oC0JIlKSEGyMWLz-_LtwnAcPw..; SUHB=00xpAt8LDskWPO; SCF=AsqXmh5Cus6Y-3p8b7RtGda_bgOE1yhq-OSlAVMwt91nxxDQ_NXym5A4Jel7ZpwHJtBHINAM7f1AaVmv49ufcfc.; SSOLoginState=1488961714"},
 			{"Cookie": "_T_WM=081a059345dc94e63c19b0f645bb2176; SUB=_2A251u7EQDeRxGeNI4lES9SjLzzmIHXVXR99YrDV6PUJbkdBeLWbFkW1SeZ8_k8hFqEUdDCE8FrSW6mCcSg..; SUHB=0u5RMC7VncECeZ; SCF=Aoc-8WCx9Z74mKLYJ034ery9zo5PKjkMPZMagR0xnYcs_kcsZKCm6EgDXgQ1zfU-kM0zfB2ltsklmfNMH2I8Oxs.; SSOLoginState=1488961856"},
