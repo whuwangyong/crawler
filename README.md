@@ -1,2 +1,2 @@
 # crawler
-some python crawlers to download somtthing
+some python crawlers to download something
